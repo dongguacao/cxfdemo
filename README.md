@@ -1,7 +1,7 @@
  ## 项目使用的是springboot2.3.1.RELEASE版本
  
  ### 项目分为两个module 
-  * client 一个main函数调用service提供的webservice方法
+  * client 一个main函数调用service提供的webservice方法  (没成功)
   * service 提供webservice服务
   
 #### service模块
