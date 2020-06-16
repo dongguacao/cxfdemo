@@ -2,13 +2,16 @@ package com.cnbg.service.commom.head;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 
 @XmlAccessorType( XmlAccessType.FIELD )
 public class RequestHeadDTO {
     private String reqSeqNo;
     private String serviceName;
     private String version;
+    @XmlElement(required = true)
     private String consumerID;
+    @XmlElement(required = true)
     private String providerID;
     private String sign;
 
