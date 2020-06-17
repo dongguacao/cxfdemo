@@ -1,11 +1,18 @@
  ## 项目使用的是springboot2.3.1.RELEASE版本
  
  ### 项目分为两个module 
-  * client 一个main函数调用service提供的webservice方法  (没成功)
+  * client 一个main函数调用service提供的webservice方法 
   * service 提供webservice服务
   
+#### client模块
+>##### 使用urlconnection 去调用服务端的webservice，将读到的流自己去解析。
+###### 相关参数
+>##### 服务端wsdl地址soapbox： 决定了去哪里调用
+>#####方法的action： 决定了调用那个方法
+  
+  
 #### service模块
-包结构
+######包结构
 
     com.cnbg.service
         |----common   
@@ -18,7 +25,7 @@
 
 里面有使用到package-infos.json 主要是为了给对象参数的成员变量添加namespace
 
-#### 相关注解
+###### 相关注解
 > ##### @XmlAccessorType( XmlAccessType.FIELD )  注解在类上可实现类成员在wsdl中有序
 > ##### @SOAPBinding(parameterStyle = SOAPBinding.ParameterStyle.BARE) 注解在webservice接口上，用于实现入参报文不带有方法名称
 
