@@ -1,6 +1,6 @@
 package com.cnbg.service.systemname.businessname.bean;
 
-import com.cnbg.client.commom.head.RequestHeadDTO;
+import com.cnbg.service.commom.head.RequestHeadDTO;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

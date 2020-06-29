@@ -4,7 +4,6 @@ import com.cnbg.service.systemname.businessname.intf.IHelloService;
 import org.apache.cxf.Bus;
 import org.apache.cxf.bus.spring.SpringBus;
 
-import javax.management.MXBean;
 import javax.xml.ws.Endpoint;
 import org.apache.cxf.jaxws.EndpointImpl;
 import org.apache.cxf.transport.servlet.CXFServlet;

@@ -1,7 +1,7 @@
 package com.cnbg.service.systemname.businessname.intf;
 
 
-import com.cnbg.client.commom.head.ResponseHeadDTO;
+import com.cnbg.service.commom.head.ResponseHeadDTO;
 import com.cnbg.service.systemname.businessname.bean.SampleRequest;
 import com.cnbg.service.systemname.businessname.bean.SampleResponse;
 import com.cnbg.service.systemname.businessname.bean.SampleResponseDTO;

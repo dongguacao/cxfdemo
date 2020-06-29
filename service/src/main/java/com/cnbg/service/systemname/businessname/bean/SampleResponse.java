@@ -1,11 +1,10 @@
 package com.cnbg.service.systemname.businessname.bean;
 
-import com.cnbg.client.commom.head.ResponseHeadDTO;
+import com.cnbg.service.commom.head.ResponseHeadDTO;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
 
 @XmlAccessorType( XmlAccessType.FIELD )
 public class SampleResponse {
