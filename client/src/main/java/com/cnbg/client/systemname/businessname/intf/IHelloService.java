@@ -1,7 +1,7 @@
-package com.cnbg.service.systemname.businessname.intf;
+package com.cnbg.client.systemname.businessname.intf;
 
-import com.cnbg.service.systemname.businessname.bean.SampleRequest;
-import com.cnbg.service.systemname.businessname.bean.SampleResponse;
+import com.cnbg.client.systemname.businessname.bean.SampleRequest;
+import com.cnbg.client.systemname.businessname.bean.SampleResponse;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;

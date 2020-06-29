@@ -1,4 +1,4 @@
-package com.cnbg.service.systemname.businessname.bean;
+package com.cnbg.client.systemname.businessname.bean;
 
 import com.cnbg.client.commom.head.RequestHeadDTO;
 
@@ -10,6 +10,7 @@ import javax.xml.bind.annotation.XmlType;
 //添加此注解即可让参数按照顺序排列
 
 @XmlAccessorType( XmlAccessType.FIELD )
+@XmlType(name = "SampleRequest")
 public class SampleRequest {
     @XmlElement(required = true)
     private RequestHeadDTO requestHead;

@@ -1,4 +1,4 @@
-package com.cnbg.service.systemname.businessname.bean;
+package com.cnbg.client.systemname.businessname.bean;
 
 import com.cnbg.client.commom.head.ResponseHeadDTO;
 
@@ -8,6 +8,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 @XmlAccessorType( XmlAccessType.FIELD )
+@XmlType(name = "SampleResponse")
 public class SampleResponse {
     @XmlElement(required = true)
     private ResponseHeadDTO responseHead;
