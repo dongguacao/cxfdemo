@@ -5,6 +5,7 @@ import com.cnbg.service.commom.head.ResponseHeadDTO;
 import com.cnbg.service.systemname.businessname.bean.SampleRequest;
 import com.cnbg.service.systemname.businessname.bean.SampleResponse;
 import com.cnbg.service.systemname.businessname.bean.SampleResponseDTO;
+import org.apache.cxf.interceptor.InInterceptors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,8 @@ import org.springframework.stereotype.Service;
 import javax.jws.WebService;
 
 @Service
-@WebService(endpointInterface= "com.cnbg.service.systemname.businessname.intf.IHelloService")
+@InInterceptors(interceptors={"com.cnbg.service.config.AuthInterceptor"})
+@WebService(endpointInterface= "com.cnbg.service.systemname.businessname.intf.IHelloService",targetNamespace = "http://service.cnbg.com.cn/systemname/businessname/intf")
 public class HelloService implements IHelloService {
 
     private static final Logger logger = LoggerFactory.getLogger(HelloService.class);

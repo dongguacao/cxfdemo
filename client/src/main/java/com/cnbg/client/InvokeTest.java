@@ -11,8 +11,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class InvokeTest {
 
-    //服务端wsdl
-    private static String wsdl = "http://172.25.37.47:7800/cxf/test?wsdl";
 
     public static void main(String[] args) throws Exception {
 
